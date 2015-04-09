@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B41E851F-9C02-43C4-A62C-BF6AF0BBAC41</string>
+	<key>IDESourceControlProjectName</key>
+	<string>googlemapstest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>22AE981B4129E507B11643C9CF50E09E504B3036</key>
+		<string>https://github.com/jblakeley/wardone.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>googlemapstest.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>22AE981B4129E507B11643C9CF50E09E504B3036</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jblakeley/wardone.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>22AE981B4129E507B11643C9CF50E09E504B3036</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>22AE981B4129E507B11643C9CF50E09E504B3036</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wardone</string>
+		</dict>
+	</array>
+</dict>
+</plist>
