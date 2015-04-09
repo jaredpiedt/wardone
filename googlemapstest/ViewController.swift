@@ -43,7 +43,8 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
 //        self.view = panoView
         
         var camera = GMSCameraPosition.cameraWithLatitude(33.995706 ,
-            longitude: -81.033082, zoom: 17)
+            longitude: -81.033082, zoom: 17, bearing: -20, viewingAngle: 0)
+        
         mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         mapView.myLocationEnabled = true
         self.mapView.delegate = self
@@ -88,8 +89,11 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
         
         var icon = UIImage(named: "map.png")
         
-        var overlay = GMSGroundOverlay(bounds: overlayBounds, icon: icon)
-        overlay.bearing = 0
+        var center = CLLocationCoordinate2DMake(33.99474, -81.033249)
+        
+        var overlay = GMSGroundOverlay(position: center, icon: icon, zoomLevel: 17)
+        //var overlay = GMSGroundOverlay(bounds: overlayBounds, icon: icon)
+        overlay.bearing = -20
         overlay.map = mapView
         
     }
