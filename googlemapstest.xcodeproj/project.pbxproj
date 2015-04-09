@@ -34,6 +34,7 @@
 		572B90C21AB7729700E89CF1 /* PanoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572B90C11AB7729700E89CF1 /* PanoViewController.swift */; };
 		5731E68D1AC1CA2D0079C721 /* sample_mpeg4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 578BF5BA1AC06B6700F7EE0F /* sample_mpeg4.mp4 */; };
 		578BF5B91AC0698900F7EE0F /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF5B81AC0698900F7EE0F /* VideoViewController.swift */; };
+		57C5A3641AD6C89F00629303 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C5A3631AD6C89F00629303 /* map.png */; };
 		57F89EA61AB77F9600E6818F /* 715 Assembly St.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F89EA21AB77F9600E6818F /* 715 Assembly St.png */; };
 		57F89EA71AB77F9600E6818F /* 713 Assembly St.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F89EA31AB77F9600E6818F /* 713 Assembly St.png */; };
 		57F89EA81AB77F9600E6818F /* 716 Assembly St.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F89EA41AB77F9600E6818F /* 716 Assembly St.png */; };
@@ -88,6 +89,7 @@
 		572B90C11AB7729700E89CF1 /* PanoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoViewController.swift; sourceTree = "<group>"; };
 		578BF5B81AC0698900F7EE0F /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		578BF5BA1AC06B6700F7EE0F /* sample_mpeg4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = sample_mpeg4.mp4; path = googlemapstest/sample_mpeg4.mp4; sourceTree = "<group>"; };
+		57C5A3631AD6C89F00629303 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		57F89EA21AB77F9600E6818F /* 715 Assembly St.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "715 Assembly St.png"; sourceTree = "<group>"; };
 		57F89EA31AB77F9600E6818F /* 713 Assembly St.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "713 Assembly St.png"; sourceTree = "<group>"; };
 		57F89EA41AB77F9600E6818F /* 716 Assembly St.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "716 Assembly St.png"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		572B90641AB610D600E89CF1 = {
 			isa = PBXGroup;
 			children = (
+				57C5A3631AD6C89F00629303 /* map.png */,
 				578BF5BA1AC06B6700F7EE0F /* sample_mpeg4.mp4 */,
 				572B90AF1AB6142E00E89CF1 /* SystemConfiguration.framework */,
 				572B90AD1AB6142100E89CF1 /* QuartzCore.framework */,
@@ -305,6 +308,7 @@
 				57F89EA91AB77F9600E6818F /* 810 Assembly St.png in Resources */,
 				57F89EA81AB77F9600E6818F /* 716 Assembly St.png in Resources */,
 				572B90801AB610D700E89CF1 /* LaunchScreen.xib in Resources */,
+				57C5A3641AD6C89F00629303 /* map.png in Resources */,
 				572B907D1AB610D700E89CF1 /* Images.xcassets in Resources */,
 				572B90981AB6137500E89CF1 /* GoogleMaps.bundle in Resources */,
 				57F89EB31AB7B54200E6818F /* binoculars.png in Resources */,

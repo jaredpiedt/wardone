@@ -82,6 +82,16 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
         // Add the marker to a GMSMapView object named mapView
 //        marker.map = mapView
         
+        var southWest = CLLocationCoordinate2DMake(33.984110, -81.038885);
+        var northEast = CLLocationCoordinate2DMake(34.005605, -81.028186);
+        var overlayBounds = GMSCoordinateBounds(coordinate: southWest, coordinate: northEast)
+        
+        var icon = UIImage(named: "map.png")
+        
+        var overlay = GMSGroundOverlay(bounds: overlayBounds, icon: icon)
+        overlay.bearing = 0
+        overlay.map = mapView
+        
     }
     
     func mapView(mapView: GMSMapView!, markerInfoContents marker: GMSMarker!) -> UIView! {
