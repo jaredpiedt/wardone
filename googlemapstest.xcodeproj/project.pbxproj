@@ -43,6 +43,10 @@
 		57F89EAF1AB7B34400E6818F /* w1logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57F89EAE1AB7B34400E6818F /* w1logo.jpg */; };
 		57F89EB11AB7B35A00E6818F /* Green pin marker icon-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57F89EB01AB7B35A00E6818F /* Green pin marker icon-2.jpg */; };
 		57F89EB31AB7B54200E6818F /* binoculars.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F89EB21AB7B54200E6818F /* binoculars.png */; };
+		F21404451AD62DF00026CED4 /* Ward One Map 7 (2)-01 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = F21404441AD62DF00026CED4 /* Ward One Map 7 (2)-01 copy.png */; };
+		F21404471AD63F8A0026CED4 /* location_house2.png in Resources */ = {isa = PBXBuildFile; fileRef = F21404461AD63F8A0026CED4 /* location_house2.png */; };
+		F21404491AD644350026CED4 /* location_house2_resize.png in Resources */ = {isa = PBXBuildFile; fileRef = F21404481AD644350026CED4 /* location_house2_resize.png */; };
+		F214044B1AD646AE0026CED4 /* location_school.png in Resources */ = {isa = PBXBuildFile; fileRef = F214044A1AD646AE0026CED4 /* location_school.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +101,10 @@
 		57F89EAE1AB7B34400E6818F /* w1logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = w1logo.jpg; sourceTree = "<group>"; };
 		57F89EB01AB7B35A00E6818F /* Green pin marker icon-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Green pin marker icon-2.jpg"; sourceTree = "<group>"; };
 		57F89EB21AB7B54200E6818F /* binoculars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = binoculars.png; sourceTree = "<group>"; };
+		F21404441AD62DF00026CED4 /* Ward One Map 7 (2)-01 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ward One Map 7 (2)-01 copy.png"; sourceTree = "<group>"; };
+		F21404461AD63F8A0026CED4 /* location_house2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_house2.png; sourceTree = "<group>"; };
+		F21404481AD644350026CED4 /* location_house2_resize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_house2_resize.png; sourceTree = "<group>"; };
+		F214044A1AD646AE0026CED4 /* location_school.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_school.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +178,11 @@
 				57F89EAE1AB7B34400E6818F /* w1logo.jpg */,
 				57F89EAC1AB79A6600E6818F /* ward one map marker.jpg */,
 				57F89EAA1AB7807300E6818F /* 827 Assembly St.png */,
+				F21404461AD63F8A0026CED4 /* location_house2.png */,
+				F21404481AD644350026CED4 /* location_house2_resize.png */,
 				57F89EA21AB77F9600E6818F /* 715 Assembly St.png */,
 				57F89EA31AB77F9600E6818F /* 713 Assembly St.png */,
+				F214044A1AD646AE0026CED4 /* location_school.png */,
 				57F89EA41AB77F9600E6818F /* 716 Assembly St.png */,
 				57F89EA51AB77F9600E6818F /* 810 Assembly St.png */,
 				572B90B91AB71B8B00E89CF1 /* MarkerInfoView.xib */,
@@ -179,6 +190,7 @@
 				572B90951AB612BD00E89CF1 /* GoogleMaps.framework */,
 				572B90721AB610D700E89CF1 /* AppDelegate.swift */,
 				572B90771AB610D700E89CF1 /* ViewController.swift */,
+				F21404441AD62DF00026CED4 /* Ward One Map 7 (2)-01 copy.png */,
 				572B90791AB610D700E89CF1 /* Main.storyboard */,
 				572B907C1AB610D700E89CF1 /* Images.xcassets */,
 				572B907E1AB610D700E89CF1 /* LaunchScreen.xib */,
@@ -298,19 +310,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				5731E68D1AC1CA2D0079C721 /* sample_mpeg4.mp4 in Resources */,
+				F21404471AD63F8A0026CED4 /* location_house2.png in Resources */,
 				57F89EA71AB77F9600E6818F /* 713 Assembly St.png in Resources */,
+				F21404451AD62DF00026CED4 /* Ward One Map 7 (2)-01 copy.png in Resources */,
 				572B907B1AB610D700E89CF1 /* Main.storyboard in Resources */,
 				57F89EAB1AB7807300E6818F /* 827 Assembly St.png in Resources */,
 				57F89EAD1AB79A6600E6818F /* ward one map marker.jpg in Resources */,
 				57F89EA91AB77F9600E6818F /* 810 Assembly St.png in Resources */,
 				57F89EA81AB77F9600E6818F /* 716 Assembly St.png in Resources */,
 				572B90801AB610D700E89CF1 /* LaunchScreen.xib in Resources */,
+				F214044B1AD646AE0026CED4 /* location_school.png in Resources */,
 				572B907D1AB610D700E89CF1 /* Images.xcassets in Resources */,
 				572B90981AB6137500E89CF1 /* GoogleMaps.bundle in Resources */,
 				57F89EB31AB7B54200E6818F /* binoculars.png in Resources */,
 				572B90BA1AB71B8B00E89CF1 /* MarkerInfoView.xib in Resources */,
 				57F89EAF1AB7B34400E6818F /* w1logo.jpg in Resources */,
 				57F89EB11AB7B35A00E6818F /* Green pin marker icon-2.jpg in Resources */,
+				F21404491AD644350026CED4 /* location_house2_resize.png in Resources */,
 				57F89EA61AB77F9600E6818F /* 715 Assembly St.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
