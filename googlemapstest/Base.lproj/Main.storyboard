@@ -28,7 +28,7 @@
                         <outlet property="mapView" destination="Zfb-7m-wpe" id="NDT-nO-FfM"/>
                         <segue destination="owJ-51-O6w" kind="show" identifier="PanoSegue" id="9vt-tD-i5M"/>
                         <segue destination="LOi-oS-skw" kind="show" identifier="VideoSegue" id="WYe-WU-RFB"/>
-                        <segue destination="fIb-me-ZIR" kind="show" identifier="contentSegue" id="UC8-yi-KVq"/>
+                        <segue destination="8BV-Jh-WCM" kind="show" identifier="contentSegue" id="71A-tL-6O5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -282,6 +282,41 @@
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2723" y="2904"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="4Oi-fd-v0e">
+            <objects>
+                <viewController storyboardIdentifier="PageViewController" id="8BV-Jh-WCM" customClass="PageViewController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="amu-Me-A6R"/>
+                        <viewControllerLayoutGuide type="bottom" id="CA0-Pm-HJb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IMX-Sj-kbW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdc-m0-tSS">
+                                <rect key="frame" x="-4" y="530" width="608" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Eor-ky-zTv"/>
+                                    <constraint firstAttribute="width" constant="608" id="Tph-dC-8Tt"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CA0-Pm-HJb" firstAttribute="top" secondItem="fdc-m0-tSS" secondAttribute="bottom" id="G4d-dk-GdJ"/>
+                            <constraint firstAttribute="centerX" secondItem="fdc-m0-tSS" secondAttribute="centerX" id="Qm4-kx-MqZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6dt-wl-Q5N"/>
+                    <connections>
+                        <outlet property="buttonScroll" destination="fdc-m0-tSS" id="Cqh-WQ-Bf5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yn0-Lj-Mqm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2157" y="-662"/>
         </scene>
     </scenes>
     <resources>
