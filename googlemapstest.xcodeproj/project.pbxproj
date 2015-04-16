@@ -53,6 +53,8 @@
 		F22E37241ADF57FA003A8D62 /* Coliseum1968.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F22E37231ADF57FA003A8D62 /* Coliseum1968.jpeg */; };
 		F22E37271ADF60E6003A8D62 /* BTW building, late 1960s--for heather.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F22E37251ADF60E6003A8D62 /* BTW building, late 1960s--for heather.jpg */; };
 		F22E37281ADF60E6003A8D62 /* btw senior class officers, 1968b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F22E37261ADF60E6003A8D62 /* btw senior class officers, 1968b.jpg */; };
+		F22E372B1ADF66A8003A8D62 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E37291ADF66A8003A8D62 /* PopUpViewController.swift */; };
+		F22E372C1ADF66A8003A8D62 /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F22E372A1ADF66A8003A8D62 /* PopUpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,8 @@
 		F22E37231ADF57FA003A8D62 /* Coliseum1968.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Coliseum1968.jpeg; sourceTree = "<group>"; };
 		F22E37251ADF60E6003A8D62 /* BTW building, late 1960s--for heather.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BTW building, late 1960s--for heather.jpg"; sourceTree = "<group>"; };
 		F22E37261ADF60E6003A8D62 /* btw senior class officers, 1968b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "btw senior class officers, 1968b.jpg"; sourceTree = "<group>"; };
+		F22E37291ADF66A8003A8D62 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		F22E372A1ADF66A8003A8D62 /* PopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +189,8 @@
 		572B906F1AB610D700E89CF1 /* googlemapstest */ = {
 			isa = PBXGroup;
 			children = (
+				F22E37291ADF66A8003A8D62 /* PopUpViewController.swift */,
+				F22E372A1ADF66A8003A8D62 /* PopUpViewController.xib */,
 				F22E37251ADF60E6003A8D62 /* BTW building, late 1960s--for heather.jpg */,
 				F22E37261ADF60E6003A8D62 /* btw senior class officers, 1968b.jpg */,
 				F22E37231ADF57FA003A8D62 /* Coliseum1968.jpeg */,
@@ -211,13 +217,13 @@
 				572B907C1AB610D700E89CF1 /* Images.xcassets */,
 				572B907E1AB610D700E89CF1 /* LaunchScreen.xib */,
 				572B90741AB610D700E89CF1 /* googlemapstest.xcdatamodeld */,
-				572B90701AB610D700E89CF1 /* Supporting Files */,
 				572B90BB1AB71D5E00E89CF1 /* MarkerInfoView.swift */,
 				F22E371F1ADF4C5C003A8D62 /* PageItemController.swift */,
 				572B90BD1AB71EDA00E89CF1 /* UIViewExtension.swift */,
 				572B90C11AB7729700E89CF1 /* PanoViewController.swift */,
 				578BF5B81AC0698900F7EE0F /* VideoViewController.swift */,
 				F22E371D1ADF4C2D003A8D62 /* PageViewController.swift */,
+				572B90701AB610D700E89CF1 /* Supporting Files */,
 			);
 			path = googlemapstest;
 			sourceTree = "<group>";
@@ -338,6 +344,7 @@
 				F22E37221ADF57D4003A8D62 /* Jubilee.png in Resources */,
 				57F89EAD1AB79A6600E6818F /* ward one map marker.jpg in Resources */,
 				57F89EA91AB77F9600E6818F /* 810 Assembly St.png in Resources */,
+				F22E372C1ADF66A8003A8D62 /* PopUpViewController.xib in Resources */,
 				57F89EA81AB77F9600E6818F /* 716 Assembly St.png in Resources */,
 				F22E37241ADF57FA003A8D62 /* Coliseum1968.jpeg in Resources */,
 				572B90801AB610D700E89CF1 /* LaunchScreen.xib in Resources */,
@@ -372,6 +379,7 @@
 				578BF5B91AC0698900F7EE0F /* VideoViewController.swift in Sources */,
 				572B90BC1AB71D5E00E89CF1 /* MarkerInfoView.swift in Sources */,
 				572B90C21AB7729700E89CF1 /* PanoViewController.swift in Sources */,
+				F22E372B1ADF66A8003A8D62 /* PopUpViewController.swift in Sources */,
 				572B90781AB610D700E89CF1 /* ViewController.swift in Sources */,
 				572B90731AB610D700E89CF1 /* AppDelegate.swift in Sources */,
 				572B90761AB610D700E89CF1 /* googlemapstest.xcdatamodeld in Sources */,

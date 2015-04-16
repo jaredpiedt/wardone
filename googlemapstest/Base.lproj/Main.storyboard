@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QZf-Vj-Jvf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -28,7 +29,7 @@
                         <outlet property="mapView" destination="Zfb-7m-wpe" id="NDT-nO-FfM"/>
                         <segue destination="owJ-51-O6w" kind="show" identifier="PanoSegue" id="9vt-tD-i5M"/>
                         <segue destination="LOi-oS-skw" kind="show" identifier="VideoSegue" id="WYe-WU-RFB"/>
-                        <segue destination="fIb-me-ZIR" kind="show" identifier="contentSegue" id="UC8-yi-KVq"/>
+                        <segue destination="8BV-Jh-WCM" kind="show" identifier="contentSegue" id="71A-tL-6O5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -52,24 +53,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPx-Ll-96Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1414" y="998"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="lQB-Sa-Jaw">
-            <objects>
-                <viewController id="fIb-me-ZIR" customClass="PageViewController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="J2V-SB-vfn"/>
-                        <viewControllerLayoutGuide type="bottom" id="Puc-Yn-eDl"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AMx-X0-4vF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ikt-A8-Sgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2045" y="-475"/>
         </scene>
         <!--Pano View Controller-->
         <scene sceneID="iJy-mS-ahS">
@@ -209,6 +192,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxc-te-sPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2982" y="172"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="4Oi-fd-v0e">
+            <objects>
+                <viewController storyboardIdentifier="PageViewController" id="8BV-Jh-WCM" customClass="PageViewController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="amu-Me-A6R"/>
+                        <viewControllerLayoutGuide type="bottom" id="CA0-Pm-HJb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IMX-Sj-kbW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdc-m0-tSS">
+                                <rect key="frame" x="0.0" y="530" width="320" height="70"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fdc-m0-tSS" firstAttribute="top" secondItem="amu-Me-A6R" secondAttribute="bottom" constant="434" id="edC-Vy-M1D"/>
+                            <constraint firstItem="fdc-m0-tSS" firstAttribute="bottom" secondItem="CA0-Pm-HJb" secondAttribute="top" id="pAJ-ID-OwE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fdc-m0-tSS" secondAttribute="trailing" constant="-20" id="vs8-qZ-BSz"/>
+                            <constraint firstItem="fdc-m0-tSS" firstAttribute="leading" secondItem="IMX-Sj-kbW" secondAttribute="leadingMargin" constant="-20" id="xYq-9r-aRI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6dt-wl-Q5N"/>
+                    <connections>
+                        <outlet property="buttonScroll" destination="fdc-m0-tSS" id="Cqh-WQ-Bf5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yn0-Lj-Mqm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2157" y="-662"/>
         </scene>
     </scenes>
     <resources>
