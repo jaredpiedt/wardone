@@ -17,12 +17,6 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     
     var controllers = [PageItemController]()
     
-    // Initialize it right away here
-    //    private let contentImages = ["nature_pic_1.png",
-    //                                 "nature_pic_2.png",
-    //                                 "nature_pic_3.png",
-    //                                 "nature_pic_4.png"]
-    
     // View controller for the popups.
     var popViewController: PopUpViewController!
     
@@ -53,7 +47,8 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         
         // Creates a view for the buttons
         let buttonView = UIView()
-        buttonView.backgroundColor = UIColor.blackColor()
+        //buttonView.backgroundColor = UIColor.blackColor()
+        buttonView.backgroundColor = UIColor(red:(212.0/255.0), green: (250.0/255.0), blue:(244.0/255.0), alpha: 1.0)
         buttonView.frame.origin = CGPointMake(0,0)
         let padding = CGSizeMake(20, 10)
         buttonView.frame.size.width = (buttonSize.width + padding.width) * CGFloat(buttonCount)
@@ -62,8 +57,11 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         // Defines some variables to have buttons at standard distances; Could easily be extended to create an actual timeline (i.e. distance between buttons can be different)
         var buttonPosition = CGPointMake(padding.width * 0.5, padding.height)
         let buttonIncrement = buttonSize.width + padding.width
-        let hueIncrement = 1.0 / CGFloat(buttonCount)
-        var newHue = hueIncrement
+      
+        var dates: [String] = [" ", " ", " ", " ", "1916", "1970", "1974", " ", " ", " "]
+
+        //let hueIncrement = 1.0 / CGFloat(buttonCount)
+        //var newHue = hueIncrement
         
         // Begin Button adding code
         // Add Buttons to View - this just procedurally creates buttonCount many buttons with different colors
@@ -73,8 +71,10 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
             button.frame.size = buttonSize
             button.frame.origin = buttonPosition
             buttonPosition.x = buttonPosition.x + buttonIncrement
-            button.backgroundColor = UIColor(hue: newHue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
-            newHue = newHue + hueIncrement
+            //button.backgroundColor = UIColor(hue: newHue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
+            //newHue = newHue + hueIncrement
+            button.backgroundColor = UIColor(red:(51.0/255.0), green: (51.0/255.0), blue:(51.0/255.0), alpha: 1.0)
+            button.setTitle(dates[i], forState: .Normal)
             button.addTarget(self, action: "timelineButtonPressed:", forControlEvents: .TouchUpInside)
             buttonView.addSubview(button)
         }
@@ -84,9 +84,9 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         // Draw Timeline Line
         let line = UIView()
         line.setTranslatesAutoresizingMaskIntoConstraints(false)
-        line.backgroundColor = UIColor.lightGrayColor()
+        line.backgroundColor = UIColor(red:(51.0/255.0), green: (51.0/255.0), blue:(51.0/255.0), alpha: 1.0)
         line.frame = CGRect(origin: CGPoint(x: 0, y: 32.5), size: CGSize(width: buttonView.frame.width, height: 5))
-        
+      
         buttonView.addSubview(line) // Add the line to the screen
         buttonView.sendSubviewToBack(line) // Send it to the back
         // End Line Code
@@ -104,7 +104,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         setupPageControl()
         
         // Set the scrolling pageview
-        let scrollingView = timelineButtonsView(CGSizeMake(50.0,50.0), buttonCount: 100) // This generates the buttons
+        let scrollingView = timelineButtonsView(CGSizeMake(50.0,50.0), buttonCount: 10) // This generates the buttons
         buttonScroll.contentSize = scrollingView.frame.size // Makes sure we actually scroll
         buttonScroll.addSubview(scrollingView) //Adds our stuff to the View
         buttonScroll.showsHorizontalScrollIndicator = true
@@ -157,7 +157,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         let appearance = UIPageControl.appearance()
         appearance.pageIndicatorTintColor = UIColor.grayColor()
         appearance.currentPageIndicatorTintColor = UIColor.whiteColor()
-        appearance.backgroundColor = UIColor.darkGrayColor()
+        appearance.backgroundColor = UIColor(red:(51.0/255.0), green: (51.0/255.0), blue:(51.0/255.0), alpha: 1.0)
     }
     
     // MARK: - UIPageViewControllerDataSource
