@@ -17,6 +17,8 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
     var segMarker: GMSMarker!
     
     var moviePlayer : MPMoviePlayerController?
+    var james: UIPageViewController!;
+    
     
     
     override func viewDidLoad() {
@@ -112,11 +114,9 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
         
         var marker5 = GMSMarker()
         marker5.position = CLLocationCoordinate2DMake(33.993389, -81.025598)
-        
-        
-        marker5.title = "Booker T. Washington High School"
+        marker5.title = "Booker T. Washington High School."
         marker5.icon = UIImage(named: "location_school.png")
-        //marker5.snippet = "Snippet"
+        marker5.snippet = "Snippet"
         marker5.map = mapView
         
         
@@ -137,62 +137,35 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
             println(marker.title + "png")
             infoView.placePhoto.image = UIImage(named: marker.title + "png")
             return infoView
-        } else {
+        }
+        else {
             return nil
         }
     }
     
     func mapView(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
 
-        // 1
-        let optionMenu = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .ActionSheet)
-        
-        // 2
-        let visitAction = UIAlertAction(title: "Visit", style: .Default, handler: {
-            (alert: UIAlertAction!) -> Void in
-                self.segMarker = marker
-                self.performSegueWithIdentifier("PanoSegue", sender: self)
-        })
-        let saveAction = UIAlertAction(title: "Info", style: .Default, handler: {
-            (alert: UIAlertAction!) -> Void in
-            println("Congrats the user selected other option...")
-        })
-        let videoAction = UIAlertAction(title: "Video", style: .Default, handler: {
-            (alert: UIAlertAction!) -> Void in
-            self.performSegueWithIdentifier("VideoSegue", sender: self)
-        })
-        
-        //
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: {
-            (alert: UIAlertAction!) -> Void in
-            println("Cancelled")
-        })
-        
-        
-        // 4
-        optionMenu.addAction(visitAction)
-        optionMenu.addAction(saveAction)
-        optionMenu.addAction(videoAction)
-        optionMenu.addAction(cancelAction)
-        
-        // 5
-        self.presentViewController(optionMenu, animated: true, completion: nil)
+        self.performSegueWithIdentifier("contentSegue", sender: self)
         
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         println(segue.identifier)
-        if segue.identifier == "PanoSegue"
+//        if segue.identifier == "PanoSegue"
+//        {
+//            var destVC = segue.destinationViewController as PanoViewController
+//            destVC.marker = segMarker
+//        }
+//        else
+        if segue.identifier == "contentSegue"
         {
-            var destVC = segue.destinationViewController as PanoViewController
-            destVC.marker = segMarker
+            var destVC = segue.destinationViewController as! PageViewController
         }
-        else if segue.identifier == "VideoSegue"
-        {
-            var destVC = segue.destinationViewController as VideoViewController
-            destVC.videoName = "sample_mpeg4" //this will obvious be changed once we get more videos
-        }
-        
+//        else if segue.identifier == "VideoSegue"
+//        {
+//            var destVC = segue.destinationViewController as VideoViewController
+//            destVC.videoName = "sample_mpeg4" //this will obvious be changed once we get more videos
+//        }
         
     }
     
@@ -206,6 +179,7 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
 
 
 }
+
 
 //        var camera = GMSCameraPosition.cameraWithLatitude(33.995706,
 //            longitude:-81.033082, zoom:17.5, bearing:30, viewingAngle:40)

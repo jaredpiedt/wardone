@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QZf-Vj-Jvf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QZf-Vj-Jvf">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -28,11 +28,12 @@
                         <outlet property="mapView" destination="Zfb-7m-wpe" id="NDT-nO-FfM"/>
                         <segue destination="owJ-51-O6w" kind="show" identifier="PanoSegue" id="9vt-tD-i5M"/>
                         <segue destination="LOi-oS-skw" kind="show" identifier="VideoSegue" id="WYe-WU-RFB"/>
+                        <segue destination="fIb-me-ZIR" kind="show" identifier="contentSegue" id="UC8-yi-KVq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1143" y="275"/>
+            <point key="canvasLocation" x="1119" y="-213"/>
         </scene>
         <!--Video View Controller-->
         <scene sceneID="s5d-qQ-cvy">
@@ -50,7 +51,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPx-Ll-96Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1414" y="998"/>
+            <point key="canvasLocation" x="254" y="-554"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="lQB-Sa-Jaw">
+            <objects>
+                <viewController id="fIb-me-ZIR" customClass="PageViewController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J2V-SB-vfn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Puc-Yn-eDl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AMx-X0-4vF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ikt-A8-Sgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2037" y="-535"/>
         </scene>
         <!--Pano View Controller-->
         <scene sceneID="iJy-mS-ahS">
@@ -68,7 +87,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VV3-Ev-53K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1877" y="278"/>
+            <point key="canvasLocation" x="957" y="-886"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="ULe-KY-1zg">
+            <objects>
+                <pageViewController storyboardIdentifier="PageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="uKM-65-PFZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZJ-B7-vfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2037" y="149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pyU-5Q-ofG">
@@ -88,5 +115,177 @@
             </objects>
             <point key="canvasLocation" x="431" y="275"/>
         </scene>
+        <!--ViewController0-->
+        <scene sceneID="Fhm-UJ-8dC">
+            <objects>
+                <viewController storyboardIdentifier="ItemController0" title="ViewController0" id="QwV-Nc-heT" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EY0-ce-dei"/>
+                        <viewControllerLayoutGuide type="bottom" id="hoQ-Il-fEM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l5p-oO-s7J">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vx-XA-4Aw">
+                                <rect key="frame" x="8" y="44" width="304" height="480"/>
+                                <string key="text">Booker T. Washington High School opened its doors in 1916 as the second public school in Columbia, South Carolina for African Americans. Built on the corner of Marion and Blossom Streets, the school only offered elementary grades. Then in 1924, it become a standard high school—the largest public high school for Blacks in South Carolina for many years. Booker T. Washington was also one of the few in the state to be accredited by the Southern Association of Colleges and Secondary Schools. The school closed in 1974 when the University of South Carolina purchased the property, adaptively reusing the structure as a collegiate institution of learning.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YrB-Wv-vZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2037" y="837"/>
+        </scene>
+        <!--ViewController1-->
+        <scene sceneID="xEH-nZ-sLc">
+            <objects>
+                <viewController storyboardIdentifier="ItemController1" title="ViewController1" id="bnT-Jc-s4Q" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aQ3-NT-ZjX"/>
+                        <viewControllerLayoutGuide type="bottom" id="LSz-eF-Tsn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OWt-Ww-rH6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BTW building, late 1960s--for heather.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5jk-3p-VTX">
+                                <rect key="frame" x="140" y="140" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="UUi-oA-Jlr"/>
+                                    <constraint firstAttribute="height" constant="320" id="a0x-Lr-UjF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89512310610000001" green="0.89512310610000001" blue="0.89512310610000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="5jk-3p-VTX" secondAttribute="centerY" id="UCX-OF-g8h"/>
+                            <constraint firstAttribute="centerX" secondItem="5jk-3p-VTX" secondAttribute="centerX" id="anR-wa-KsK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="view" destination="OWt-Ww-rH6" id="8eM-cd-pHQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lgd-oU-c5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2037" y="1532"/>
+        </scene>
+        <!--ViewController2-->
+        <scene sceneID="oPM-th-LfI">
+            <objects>
+                <viewController storyboardIdentifier="ItemController2" title="ViewController2" id="u7q-BJ-5bW" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VcX-uk-UTh"/>
+                        <viewControllerLayoutGuide type="bottom" id="WFk-re-BzR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OsG-K5-Kc9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btw senior class officers, 1968b.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Gwx-Th-mQP">
+                                <rect key="frame" x="140" y="140" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="K7m-T0-nmg"/>
+                                    <constraint firstAttribute="height" constant="320" id="nvr-wi-2GI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89512310610000001" green="0.89512310610000001" blue="0.89512310610000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Gwx-Th-mQP" secondAttribute="centerX" id="OyD-9w-SGr"/>
+                            <constraint firstAttribute="centerY" secondItem="Gwx-Th-mQP" secondAttribute="centerY" id="lyY-ja-QLE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="view" destination="OsG-K5-Kc9" id="gIY-RQ-XPU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxc-te-sPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2037" y="2216"/>
+        </scene>
+        <!--ItemController3-->
+        <scene sceneID="A6b-o1-hMl">
+            <objects>
+                <viewController storyboardIdentifier="ItemController3" title="ItemController3" id="rlb-ZO-1yF" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pZi-dy-6dx"/>
+                        <viewControllerLayoutGuide type="bottom" id="cYW-xi-U6y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IbI-fp-4pX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is some text about the video. Also some source information." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAE-QW-Evj">
+                                <rect key="frame" x="16" y="297" width="341" height="108"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCK-Lu-NWo">
+                                <rect key="frame" x="277" y="125" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="viT-KY-Oce"/>
+                                </constraints>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="60y-B1-8Z6" kind="presentation" id="Sa4-6J-PGl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MCK-Lu-NWo" firstAttribute="centerX" secondItem="IbI-fp-4pX" secondAttribute="centerX" id="4aV-8D-E4l"/>
+                            <constraint firstItem="MCK-Lu-NWo" firstAttribute="top" secondItem="pZi-dy-6dx" secondAttribute="bottom" constant="105" id="fRv-3A-pM1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLv-kP-6et" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2037" y="2904"/>
+        </scene>
+        <!--Video Controller-->
+        <scene sceneID="57p-1O-5aR">
+            <objects>
+                <viewController id="60y-B1-8Z6" customClass="VideoController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yb4-xE-CHU"/>
+                        <viewControllerLayoutGuide type="bottom" id="HDK-Do-ieh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Cz-c8-Ftu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="SrV-Ru-3fw" appends="YES" id="l8l-Wg-1U1"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <segue destination="N94-g7-qIE" kind="unwind" identifier="unwind" unwindAction="unwindToPage:" id="RAC-oC-2DB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DEk-Dt-jFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="N94-g7-qIE" userLabel="Exit" sceneMemberID="exit"/>
+                <swipeGestureRecognizer direction="up" id="SrV-Ru-3fw">
+                    <connections>
+                        <segue destination="N94-g7-qIE" kind="unwind" unwindAction="unwindToPage:" id="ne4-YH-ogG"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2723" y="2904"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="BTW building, late 1960s--for heather.jpg" width="1909" height="1258"/>
+        <image name="btw senior class officers, 1968b.jpg" width="1443" height="1045"/>
+    </resources>
 </document>
