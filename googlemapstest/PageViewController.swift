@@ -30,9 +30,23 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         
         // Launch a pop up
         // Could easily use the sender.tag to specify specific content.
-        self.popViewController = PopUpViewController(nibName: "PopUpViewController", bundle: nil)
-        self.popViewController.title = "This is a popup view for button \(sender.tag)"
-        self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a popup window for \(sender.tag)", animated: true)
+        
+        
+        if UIScreen.mainScreen().bounds.size.width > 320 {
+            if UIScreen.mainScreen().scale == 3 {
+                self.popViewController = PopUpViewController(nibName: "PopUpViewController_iPhone6Plus", bundle: nil)
+                self.popViewController.title = "This is a popup view"
+                self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a popup window for \(sender.tag)", animated: true)
+            } else {
+                self.popViewController = PopUpViewController(nibName: "PopUpViewController_iPhone6", bundle: nil)
+                self.popViewController.title = "This is a popup view"
+                self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a popup window for \(sender.tag)", animated: true)
+            }
+        } else {
+            self.popViewController = PopUpViewController(nibName: "PopUpViewController", bundle: nil)
+            self.popViewController.title = "This is a popup view"
+            self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a popup window for \(sender.tag)", animated: true)
+        }
     }
     
     func timelineButtonsView(buttonSize:CGSize, buttonCount:Int) -> UIView {
@@ -90,7 +104,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         setupPageControl()
         
         // Set the scrolling pageview
-        let scrollingView = timelineButtonsView(CGSizeMake(50.0,50.0), buttonCount: 10) // This generates the buttons
+        let scrollingView = timelineButtonsView(CGSizeMake(50.0,50.0), buttonCount: 100) // This generates the buttons
         buttonScroll.contentSize = scrollingView.frame.size // Makes sure we actually scroll
         buttonScroll.addSubview(scrollingView) //Adds our stuff to the View
         buttonScroll.showsHorizontalScrollIndicator = true

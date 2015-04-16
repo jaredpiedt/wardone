@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewControllerSwift" customModule="NMPopUpView" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewControllerSwift" customModule="googlemapstest" customModuleProvider="target">
             <connections>
                 <outlet property="logoImg" destination="fJX-L7-ZK4" id="qHe-3t-nmY"/>
                 <outlet property="messageLabel" destination="vGX-I2-Qu4" id="Ah1-SR-hCM"/>
@@ -66,6 +65,7 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Pon-Sf-YGC" secondAttribute="bottom" constant="161" id="2eW-uF-Soc"/>
                 <constraint firstItem="Pon-Sf-YGC" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="19" id="9OE-R9-gaB"/>
+                <constraint firstAttribute="centerX" secondItem="Pon-Sf-YGC" secondAttribute="centerX" id="gCZ-We-MmW"/>
                 <constraint firstItem="Pon-Sf-YGC" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="qQG-Qc-ae7"/>
                 <constraint firstItem="Pon-Sf-YGC" firstAttribute="top" secondItem="1" secondAttribute="top" constant="73" id="vSs-rq-9C6"/>
             </constraints>
