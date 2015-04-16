@@ -30,9 +30,23 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         
         // Launch a pop up
         // Could easily use the sender.tag to specify specific content.
-        self.popViewController = PopUpViewController(nibName: "PopUpViewController", bundle: nil)
-        self.popViewController.title = "This is a popup view for button \(sender.tag)"
-        self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a popup window for \(sender.tag)", animated: true)
+        
+        
+        if UIScreen.mainScreen().bounds.size.width > 320 {
+            if UIScreen.mainScreen().scale == 3 {
+                self.popViewController = PopUpViewController(nibName: "PopUpViewController_iPhone6Plus", bundle: nil)
+                self.popViewController.title = "This is a popup view"
+                self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a popup window for \(sender.tag)", animated: true)
+            } else {
+                self.popViewController = PopUpViewController(nibName: "PopUpViewController_iPhone6", bundle: nil)
+                self.popViewController.title = "This is a popup view"
+                self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a popup window for \(sender.tag)", animated: true)
+            }
+        } else {
+            self.popViewController = PopUpViewController(nibName: "PopUpViewController", bundle: nil)
+            self.popViewController.title = "This is a popup view"
+            self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a popup window for \(sender.tag)", animated: true)
+        }
     }
     
     func timelineButtonsView(buttonSize:CGSize, buttonCount:Int) -> UIView {
@@ -54,7 +68,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         // Begin Button adding code
         // Add Buttons to View - this just procedurally creates buttonCount many buttons with different colors
         for i in 0...(buttonCount - 1)  {
-            var button = UIButton.buttonWithType(.Custom) as UIButton
+            var button = UIButton.buttonWithType(.Custom) as! UIButton
             button.tag = i
             button.frame.size = buttonSize
             button.frame.origin = buttonPosition
@@ -85,24 +99,22 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        // Set the scrolling pageview
-        let scrollingView = timelineButtonsView(CGSizeMake(50.0,50.0), buttonCount: 10) // This generates the buttons
-        buttonScroll.contentSize = scrollingView.frame.size // Makes sure we actually scroll
-        buttonScroll.addSubview(scrollingView) //Adds our stuff to the View
-        buttonScroll.showsHorizontalScrollIndicator = true
-        buttonScroll.indicatorStyle = .Default
-        
         populateControllersArray()
         createPageViewController()
         setupPageControl()
         
+        // Set the scrolling pageview
+        let scrollingView = timelineButtonsView(CGSizeMake(50.0,50.0), buttonCount: 100) // This generates the buttons
+        buttonScroll.contentSize = scrollingView.frame.size // Makes sure we actually scroll
+        buttonScroll.addSubview(scrollingView) //Adds our stuff to the View
+        buttonScroll.showsHorizontalScrollIndicator = true
+        buttonScroll.indicatorStyle = .Default
         view.bringSubviewToFront(buttonScroll)
     }
     
     func populateControllersArray() {
         for i in 0...2 {
-            let controller = storyboard!.instantiateViewControllerWithIdentifier("ItemController\(i)") as PageItemController
+            let controller = storyboard!.instantiateViewControllerWithIdentifier("ItemController\(i)") as! PageItemController
             controller.itemIndex = i
             controllers.append(controller)
             
@@ -111,7 +123,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     
     private func createPageViewController() {
         
-        let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageController") as UIPageViewController
+        let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageController") as! UIPageViewController
         pageController.dataSource = self
         
         if !controllers.isEmpty {

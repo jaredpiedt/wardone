@@ -160,7 +160,7 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
 //        else
         if segue.identifier == "contentSegue"
         {
-            var destVC = segue.destinationViewController as PageViewController
+            var destVC = segue.destinationViewController as! PageViewController
         }
 //        else if segue.identifier == "VideoSegue"
 //        {
