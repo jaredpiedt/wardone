@@ -17,6 +17,8 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
     var segMarker: GMSMarker!
     
     var moviePlayer : MPMoviePlayerController?
+    var james: UIPageViewController!;
+    
     
     
     override func viewDidLoad() {
@@ -153,9 +155,9 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
                 self.segMarker = marker
                 self.performSegueWithIdentifier("PanoSegue", sender: self)
         })
-        let saveAction = UIAlertAction(title: "Info", style: .Default, handler: {
+        let saveAction = UIAlertAction(title: "Maribeth is Awesome", style: .Default, handler: {
             (alert: UIAlertAction!) -> Void in
-            println("Congrats the user selected other option...")
+            self.performSegueWithIdentifier("contentSegue", sender: self)
         })
         let videoAction = UIAlertAction(title: "Video", style: .Default, handler: {
             (alert: UIAlertAction!) -> Void in
@@ -187,6 +189,10 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
             var destVC = segue.destinationViewController as PanoViewController
             destVC.marker = segMarker
         }
+        else if segue.identifier == "contentSegue"
+        {
+            var destVC = segue.destinationViewController as PageViewController
+        }
         else if segue.identifier == "VideoSegue"
         {
             var destVC = segue.destinationViewController as VideoViewController
@@ -196,6 +202,11 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
         
     }
     
+//    func pushedButtonOne(sender: UIButton)
+//    {
+//        let secondView = SecondViewController(nibName: "PageViewController", bundle: nil)
+//        navigationController?.pushViewController(secondView, animated: true)
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -206,6 +217,7 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
 
 
 }
+
 
 //        var camera = GMSCameraPosition.cameraWithLatitude(33.995706,
 //            longitude:-81.033082, zoom:17.5, bearing:30, viewingAngle:40)
