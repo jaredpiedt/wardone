@@ -54,7 +54,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         // Begin Button adding code
         // Add Buttons to View - this just procedurally creates buttonCount many buttons with different colors
         for i in 0...(buttonCount - 1)  {
-            var button = UIButton.buttonWithType(.Custom) as UIButton
+            var button = UIButton.buttonWithType(.Custom) as! UIButton
             button.tag = i
             button.frame.size = buttonSize
             button.frame.origin = buttonPosition
@@ -85,6 +85,9 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        populateControllersArray()
+        createPageViewController()
+        setupPageControl()
         
         // Set the scrolling pageview
         let scrollingView = timelineButtonsView(CGSizeMake(50.0,50.0), buttonCount: 10) // This generates the buttons
@@ -92,17 +95,12 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         buttonScroll.addSubview(scrollingView) //Adds our stuff to the View
         buttonScroll.showsHorizontalScrollIndicator = true
         buttonScroll.indicatorStyle = .Default
-        
-        populateControllersArray()
-        createPageViewController()
-        setupPageControl()
-        
         view.bringSubviewToFront(buttonScroll)
     }
     
     func populateControllersArray() {
         for i in 0...2 {
-            let controller = storyboard!.instantiateViewControllerWithIdentifier("ItemController\(i)") as PageItemController
+            let controller = storyboard!.instantiateViewControllerWithIdentifier("ItemController\(i)") as! PageItemController
             controller.itemIndex = i
             controllers.append(controller)
             
@@ -111,7 +109,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     
     private func createPageViewController() {
         
-        let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageController") as UIPageViewController
+        let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageController") as! UIPageViewController
         pageController.dataSource = self
         
         if !controllers.isEmpty {
