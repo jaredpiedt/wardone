@@ -146,67 +146,30 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
     
     func mapView(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
 
-        // 1
-        let optionMenu = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .ActionSheet)
-        
-        // 2
-        let visitAction = UIAlertAction(title: "Visit", style: .Default, handler: {
-            (alert: UIAlertAction!) -> Void in
-                self.segMarker = marker
-                self.performSegueWithIdentifier("PanoSegue", sender: self)
-        })
-        let saveAction = UIAlertAction(title: "Maribeth is Awesome", style: .Default, handler: {
-            (alert: UIAlertAction!) -> Void in
-            self.performSegueWithIdentifier("contentSegue", sender: self)
-        })
-        let videoAction = UIAlertAction(title: "Video", style: .Default, handler: {
-            (alert: UIAlertAction!) -> Void in
-            self.performSegueWithIdentifier("VideoSegue", sender: self)
-        })
-        
-        //
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: {
-            (alert: UIAlertAction!) -> Void in
-            println("Cancelled")
-        })
-        
-        
-        // 4
-        optionMenu.addAction(visitAction)
-        optionMenu.addAction(saveAction)
-        optionMenu.addAction(videoAction)
-        optionMenu.addAction(cancelAction)
-        
-        // 5
-        self.presentViewController(optionMenu, animated: true, completion: nil)
+        self.performSegueWithIdentifier("contentSegue", sender: self)
         
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         println(segue.identifier)
-        if segue.identifier == "PanoSegue"
-        {
-            var destVC = segue.destinationViewController as PanoViewController
-            destVC.marker = segMarker
-        }
-        else if segue.identifier == "contentSegue"
+//        if segue.identifier == "PanoSegue"
+//        {
+//            var destVC = segue.destinationViewController as PanoViewController
+//            destVC.marker = segMarker
+//        }
+//        else
+        if segue.identifier == "contentSegue"
         {
             var destVC = segue.destinationViewController as PageViewController
         }
-        else if segue.identifier == "VideoSegue"
-        {
-            var destVC = segue.destinationViewController as VideoViewController
-            destVC.videoName = "sample_mpeg4" //this will obvious be changed once we get more videos
-        }
-        
+//        else if segue.identifier == "VideoSegue"
+//        {
+//            var destVC = segue.destinationViewController as VideoViewController
+//            destVC.videoName = "sample_mpeg4" //this will obvious be changed once we get more videos
+//        }
         
     }
     
-//    func pushedButtonOne(sender: UIButton)
-//    {
-//        let secondView = SecondViewController(nibName: "PageViewController", bundle: nil)
-//        navigationController?.pushViewController(secondView, animated: true)
-//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

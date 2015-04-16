@@ -154,7 +154,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jubilee.png" translatesAutoresizingMaskIntoConstraints="NO" id="5jk-3p-VTX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BTW building, late 1960s--for heather.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5jk-3p-VTX">
                                 <rect key="frame" x="140" y="140" width="320" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="UUi-oA-Jlr"/>
@@ -188,7 +188,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coliseum1968.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Gwx-Th-mQP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btw senior class officers, 1968b.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Gwx-Th-mQP">
                                 <rect key="frame" x="140" y="140" width="320" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="K7m-T0-nmg"/>
@@ -212,7 +212,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Coliseum1968.jpeg" width="512" height="512"/>
-        <image name="Jubilee.png" width="1429" height="988"/>
+        <image name="BTW building, late 1960s--for heather.jpg" width="1909" height="1258"/>
+        <image name="btw senior class officers, 1968b.jpg" width="1443" height="1045"/>
     </resources>
 </document>

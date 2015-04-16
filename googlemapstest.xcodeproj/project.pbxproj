@@ -51,6 +51,8 @@
 		F22E37201ADF4C5C003A8D62 /* PageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E371F1ADF4C5C003A8D62 /* PageItemController.swift */; };
 		F22E37221ADF57D4003A8D62 /* Jubilee.png in Resources */ = {isa = PBXBuildFile; fileRef = F22E37211ADF57D4003A8D62 /* Jubilee.png */; };
 		F22E37241ADF57FA003A8D62 /* Coliseum1968.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F22E37231ADF57FA003A8D62 /* Coliseum1968.jpeg */; };
+		F22E37271ADF60E6003A8D62 /* BTW building, late 1960s--for heather.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F22E37251ADF60E6003A8D62 /* BTW building, late 1960s--for heather.jpg */; };
+		F22E37281ADF60E6003A8D62 /* btw senior class officers, 1968b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F22E37261ADF60E6003A8D62 /* btw senior class officers, 1968b.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,8 @@
 		F22E371F1ADF4C5C003A8D62 /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemController.swift; sourceTree = "<group>"; };
 		F22E37211ADF57D4003A8D62 /* Jubilee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jubilee.png; sourceTree = "<group>"; };
 		F22E37231ADF57FA003A8D62 /* Coliseum1968.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Coliseum1968.jpeg; sourceTree = "<group>"; };
+		F22E37251ADF60E6003A8D62 /* BTW building, late 1960s--for heather.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BTW building, late 1960s--for heather.jpg"; sourceTree = "<group>"; };
+		F22E37261ADF60E6003A8D62 /* btw senior class officers, 1968b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "btw senior class officers, 1968b.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,8 @@
 		572B906F1AB610D700E89CF1 /* googlemapstest */ = {
 			isa = PBXGroup;
 			children = (
+				F22E37251ADF60E6003A8D62 /* BTW building, late 1960s--for heather.jpg */,
+				F22E37261ADF60E6003A8D62 /* btw senior class officers, 1968b.jpg */,
 				F22E37231ADF57FA003A8D62 /* Coliseum1968.jpeg */,
 				57F89EB21AB7B54200E6818F /* binoculars.png */,
 				57F89EB01AB7B35A00E6818F /* Green pin marker icon-2.jpg */,
@@ -321,10 +327,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F22E37271ADF60E6003A8D62 /* BTW building, late 1960s--for heather.jpg in Resources */,
 				5731E68D1AC1CA2D0079C721 /* sample_mpeg4.mp4 in Resources */,
 				F21404471AD63F8A0026CED4 /* location_house2.png in Resources */,
 				57F89EA71AB77F9600E6818F /* 713 Assembly St.png in Resources */,
 				F21404451AD62DF00026CED4 /* Ward One Map 7 (2)-01 copy.png in Resources */,
+				F22E37281ADF60E6003A8D62 /* btw senior class officers, 1968b.jpg in Resources */,
 				572B907B1AB610D700E89CF1 /* Main.storyboard in Resources */,
 				57F89EAB1AB7807300E6818F /* 827 Assembly St.png in Resources */,
 				F22E37221ADF57D4003A8D62 /* Jubilee.png in Resources */,
