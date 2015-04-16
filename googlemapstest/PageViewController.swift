@@ -31,8 +31,8 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     }
     
     func populateControllersArray() {
-        for i in 0...2 {
-            let controller = storyboard!.instantiateViewControllerWithIdentifier("ItemController\(i)") as PageItemController
+        for i in 0...3 {
+            let controller = storyboard!.instantiateViewControllerWithIdentifier("ItemController\(i)") as! PageItemController
             controller.itemIndex = i
             controllers.append(controller)
             
@@ -41,7 +41,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     
     private func createPageViewController() {
         
-        let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageController") as UIPageViewController
+        let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageController") as! UIPageViewController
         pageController.dataSource = self
         
         if !controllers.isEmpty {

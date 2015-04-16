@@ -30,4 +30,10 @@ class PageItemController: UIViewController {
         super.viewDidLoad()
 //        contentImageView!.image = UIImage(named: imageName)
     }
+  
+  @IBAction func unwindToPage(sender: UIStoryboardSegue)
+  {
+    let sourceViewController = sender.sourceViewController
+    // Pull any data from the view controller which initiated the unwind segue.
+  }
 }

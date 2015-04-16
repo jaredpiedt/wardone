@@ -114,11 +114,9 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
         
         var marker5 = GMSMarker()
         marker5.position = CLLocationCoordinate2DMake(33.993389, -81.025598)
-        
-        
-        marker5.title = "Booker T. Washington High School"
+        marker5.title = "Booker T. Washington High School."
         marker5.icon = UIImage(named: "location_school.png")
-        //marker5.snippet = "Snippet"
+        marker5.snippet = "Snippet"
         marker5.map = mapView
         
         
@@ -139,7 +137,8 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
             println(marker.title + "png")
             infoView.placePhoto.image = UIImage(named: marker.title + "png")
             return infoView
-        } else {
+        }
+        else {
             return nil
         }
     }
@@ -160,7 +159,7 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
 //        else
         if segue.identifier == "contentSegue"
         {
-            var destVC = segue.destinationViewController as PageViewController
+            var destVC = segue.destinationViewController as! PageViewController
         }
 //        else if segue.identifier == "VideoSegue"
 //        {
