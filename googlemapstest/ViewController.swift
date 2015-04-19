@@ -43,32 +43,6 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
 //        marker.panoramaView = panoView
 //        self.view = panoView
         
-        
-//        var southWest = CLLocationCoordinate2DMake(40.712216,-74.22655);
-//        var northEast = CLLocationCoordinate2DMake(40.773941,-74.12544);
-//        var overlayBounds = GMSCoordinateBounds(coordinate: southWest, coordinate: northEast)
-        
-        // Image from http://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg
-//        var icon = UIImage(named: "newark_nj_1922.jpg")
-//        
-//        var overlay = GMSGroundOverlay(bounds: overlayBounds, icon: icon)
-//        overlay.bearing = 0
-//        overlay.map = mapView
-        
-        //mapView.myLocationEnabled = true
-        
-        //mapView.settings.myLocationButton = true
-        
-        
-        var southWest = CLLocationCoordinate2DMake(34.005413,-81.027542);
-        var northEast = CLLocationCoordinate2DMake(33.983934,-81.039044);
-        var overlayBounds = GMSCoordinateBounds(coordinate: southWest, coordinate: northEast)
-
-       var mapImage = UIImage(named: "ward one map marker.jpg") //"Ward One Map 7 (2)-01 copy.png")
-        var overlay = GMSGroundOverlay(bounds: overlayBounds, icon: mapImage)
-        overlay.bearing = 0
-        overlay.map = mapView
-        //overlay.tappable = true
 
         
         var camera = GMSCameraPosition.cameraWithLatitude(33.995706 ,
@@ -81,14 +55,14 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
         
 //        mapView.frame = CGRectZero
 //        mapView.camera = camera
-//
+
+        //markers begin
         var marker = GMSMarker()
         marker.position = CLLocationCoordinate2DMake(33.995706, -81.033082)
         marker.title = "827 Assembly St."
         marker.icon = UIImage(named: "location_house2_resize.png")
         marker.snippet = "snippet"
         marker.map = mapView
-        
         
         var marker2 = GMSMarker()
         marker2.position = CLLocationCoordinate2DMake(33.995498, -81.032771)
@@ -118,13 +92,32 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
         marker5.icon = UIImage(named: "location_school.png")
         marker5.snippet = "Snippet"
         marker5.map = mapView
-        
+        //markers end
         
         
         //mapView.touchesBegan(<#touches: NSSet#>, withEvent: <#UIEvent#>)
         
-        // Add the marker to a GMSMapView object named mapView
-//        marker.map = mapView
+        //Add the marker to a GMSMapView object named mapView
+        //marker.map = mapView
+        
+        
+        
+        //overlay code begins here
+        
+        var southWest = CLLocationCoordinate2DMake(33.984110, -81.038885);
+        var northEast = CLLocationCoordinate2DMake(34.005605, -81.028186);
+        var overlayBounds = GMSCoordinateBounds(coordinate: southWest, coordinate: northEast)
+        
+        var icon = UIImage(named: "map.png")
+        
+        var center = CLLocationCoordinate2DMake(33.99474, -81.033249)
+        
+        var overlay = GMSGroundOverlay(position: center, icon: icon, zoomLevel: 17)
+        overlay.bearing = -20
+        overlay.map = mapView
+        
+        //overlay code ends here
+        
         
     }
     

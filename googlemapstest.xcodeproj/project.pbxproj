@@ -64,6 +64,7 @@
 		F22E37281ADF60E6003A8D62 /* btw senior class officers, 1968b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F22E37261ADF60E6003A8D62 /* btw senior class officers, 1968b.jpg */; };
 		F22E372B1ADF66A8003A8D62 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E37291ADF66A8003A8D62 /* PopUpViewController.swift */; };
 		F22E372C1ADF66A8003A8D62 /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F22E372A1ADF66A8003A8D62 /* PopUpViewController.xib */; };
+		F23A94B31AE34E8600016D39 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A94B21AE34E8600016D39 /* map.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +141,7 @@
 		F22E37261ADF60E6003A8D62 /* btw senior class officers, 1968b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "btw senior class officers, 1968b.jpg"; sourceTree = "<group>"; };
 		F22E37291ADF66A8003A8D62 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		F22E372A1ADF66A8003A8D62 /* PopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
+		F23A94B21AE34E8600016D39 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 		572B906F1AB610D700E89CF1 /* googlemapstest */ = {
 			isa = PBXGroup;
 			children = (
+				F23A94B21AE34E8600016D39 /* map.png */,
 				A8B606C71ADF903E00C71C2E /* Booker T. Washington High School.png */,
 				A8B606BB1ADF741D00C71C2E /* VideoController.swift */,
 				A8B606BC1ADF741D00C71C2E /* btw.m4v */,
@@ -372,6 +375,7 @@
 				572B907B1AB610D700E89CF1 /* Main.storyboard in Resources */,
 				57F89EAB1AB7807300E6818F /* 827 Assembly St.png in Resources */,
 				A8FA2B8E1AE02FF00013EB0B /* Splash Screen_text2.png in Resources */,
+				F23A94B31AE34E8600016D39 /* map.png in Resources */,
 				F22E37221ADF57D4003A8D62 /* Jubilee.png in Resources */,
 				A8B606BE1ADF741D00C71C2E /* btw.m4v in Resources */,
 				57F89EAD1AB79A6600E6818F /* ward one map marker.jpg in Resources */,
