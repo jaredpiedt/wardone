@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Ward One-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Ward One" id="BYZ-38-t0r" customClass="ViewController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,7 +23,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="GC3-bM-7pV"/>
+                    <navigationItem key="navigationItem" title="Ward One" id="GC3-bM-7pV"/>
                     <connections>
                         <outlet property="mapView" destination="Zfb-7m-wpe" id="NDT-nO-FfM"/>
                         <segue destination="owJ-51-O6w" kind="show" identifier="PanoSegue" id="9vt-tD-i5M"/>
@@ -53,24 +53,6 @@
             </objects>
             <point key="canvasLocation" x="254" y="-554"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="lQB-Sa-Jaw">
-            <objects>
-                <viewController id="fIb-me-ZIR" customClass="PageViewController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="J2V-SB-vfn"/>
-                        <viewControllerLayoutGuide type="bottom" id="Puc-Yn-eDl"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AMx-X0-4vF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ikt-A8-Sgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2037" y="-535"/>
-        </scene>
         <!--Pano View Controller-->
         <scene sceneID="iJy-mS-ahS">
             <objects>
@@ -97,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="2037" y="149"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Ward One-->
         <scene sceneID="pyU-5Q-ofG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QZf-Vj-Jvf" sceneMemberID="viewController">
+                <navigationController title="Ward One" automaticallyAdjustsScrollViewInsets="NO" id="QZf-Vj-Jvf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kbf-U3-M3s">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -225,7 +207,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is some text about the video. Also some source information." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAE-QW-Evj">
                                 <rect key="frame" x="16" y="297" width="341" height="108"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCK-Lu-NWo">
@@ -283,7 +265,7 @@
             </objects>
             <point key="canvasLocation" x="2723" y="2904"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Booker T. Washington High School-->
         <scene sceneID="4Oi-fd-v0e">
             <objects>
                 <viewController storyboardIdentifier="PageViewController" id="8BV-Jh-WCM" customClass="PageViewController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
@@ -309,7 +291,7 @@
                             <constraint firstAttribute="centerX" secondItem="fdc-m0-tSS" secondAttribute="centerX" id="Qm4-kx-MqZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="6dt-wl-Q5N"/>
+                    <navigationItem key="navigationItem" title="Booker T. Washington High School" id="6dt-wl-Q5N"/>
                     <connections>
                         <outlet property="buttonScroll" destination="fdc-m0-tSS" id="Cqh-WQ-Bf5"/>
                     </connections>
